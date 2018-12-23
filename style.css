@@ -1,0 +1,94 @@
+
+/* TODO: solo para maquetado */
+.main-section header {
+  font-style: italic;
+  font-weight: bold;
+}
+
+#navbar {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: var(--bg-nav, rgb(255, 255, 255));
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+}
+
+#navbar header {
+  text-align: center;
+}
+
+#navbar .nav-link {
+  padding: 8px 8px 8px 32px;
+  display: block;
+  transition: 0.3s;
+}
+
+#navbar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+a.button {
+  position: fixed;
+  margin: 5px;
+  bottom: 0;
+  left: 0;
+}
+#main-doc {
+  grid-area: main;
+  transition: margin-left .5s;
+  padding: 5px;
+}
+
+.main-section {
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: justify;
+  border-bottom: 1px solid #42424225;
+}
+
+#navbar::-webkit-scrollbar-track,
+pre::-webkit-scrollbar-track {
+  height: 5px;
+  -webkit-box-shadow: inset 0 0 6px rgb(154, 77, 202);
+  box-shadow: inset 0 0 6px rgb(154, 77, 202);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+#navbar::-webkit-scrollbar,
+pre::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  background-color: #F5F5F5;
+}
+
+#navbar::-webkit-scrollbar-thumb,
+pre::-webkit-scrollbar-thumb {
+  height: 5px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgb(154, 77, 202);
+  background-color: rgb(154, 77, 202);
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 360px) {
+  #main-doc {
+    padding: 20px;
+  }
+}
